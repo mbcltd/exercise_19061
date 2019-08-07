@@ -23,6 +23,9 @@ it('Today is formatted as time on the home screen', () => {
   expect(
     formatHomeScreen(Date.parse('2019-01-01T11:32:15.000Z'), Date.parse('2019-01-01T12:00:00.000Z'))
   ).toBe('11:32');
+  expect(
+    formatHomeScreen(Date.parse('2019-01-01T05:05:15.000Z'), Date.parse('2019-01-01T12:00:00.000Z'))
+  ).toBe('05:05');
 });
 
 it('Yesterday is formatted as "YESTERDAY"', () => {
